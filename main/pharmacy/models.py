@@ -27,3 +27,7 @@ class Patient(models.Model):
     contact = models.BigIntegerField()
     details= models.CharField(max_length=150)
     doctor_id=models.ForeignKey('Doctor',on_delete=models.CASCADE)
+
+
+# class Medicine(models.Model):
+    
