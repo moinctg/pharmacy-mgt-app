@@ -11,3 +11,7 @@ class UserModel(UserAdmin):
 admin.site.register(Hospital)
 admin.site.register(Doctor)
 admin.site.register(Patient)
+admin.site.register(Stock)
+admin.site.register(Medicine)
+admin.site.register(Store)
+admin.site.register(StoreKipper)
