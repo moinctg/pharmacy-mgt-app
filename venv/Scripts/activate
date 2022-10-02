@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="M:\Project\Python\Django\Pharmacy-mgt-app\venv"
+VIRTUAL_ENV="H:\Project\Python_Django_Project\pharmacy-mgt-app\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,0 +1,24 @@
+.dashboard-menu{
+    text-decoration: none;
+    color: gray;
+    padding-bottom:20px ;
+    
+}
+.dashboard-menu:hover{
+    color:#ffd100 ;
+}
+.dashboard-menu:active{
+   color: #F63E7B;
+}
+.text li{
+    padding-bottom: 20px;
+    text-decoration: none;
+
+}
+.sidebar-container{
+    background-color:white;
+    padding-bottom: 200px;
+}
+.logo-style{
+    color: #ffd100;
+}

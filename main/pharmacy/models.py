@@ -34,6 +34,7 @@ class Patient(models.Model):
     doctor_id=models.ForeignKey('Doctor',on_delete=models.CASCADE)
     def __str__(self):
         return self.name
+        
 class Medicine(models.Model):
     mfg = models.DateTimeField(auto_now_add='')
     name= models.CharField(max_length=20)
