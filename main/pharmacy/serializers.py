@@ -20,7 +20,7 @@ class MedicineSerializer(serializers.ModelSerializer):
     class Meta:
         model = Medicine
         fields = "__all__"
-class PatientSerializer(serializers.ModelSerializer):
+class StockSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock
         fields = "__all__"

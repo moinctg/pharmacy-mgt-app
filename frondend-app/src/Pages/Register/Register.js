@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 import { Button, Modal, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Register.css';
@@ -6,7 +7,6 @@ import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
     const [registerFromData ,  setRegisterFromData] = useState({})
-    const history = useHistory();
     const {  isLoading, authError ,registerUser, modal, setModal, user } = useAuth();
 
     const handleOnChange = e => {
@@ -19,7 +19,7 @@ const Register = () => {
     }
     const handleRegisterSubmit = e => {
         e.preventDefault()
-        registerUser(registerFromData.email,registerFromData.password,registerFromData.name,history)
+        registerUser(registerFromData.email,registerFromData.password,registerFromData.name,useNavigate)
         console.log(registerUser)
     }
     return (

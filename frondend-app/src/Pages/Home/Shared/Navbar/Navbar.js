@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../../../images/logo.png';
+// import logo from '../../../../images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faShoppingCart, faUserCircle  } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
@@ -20,7 +20,7 @@ const Navbar = () => {
         
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand"  href="#"></a>
-  <img src={logo} alt="" height={'50px'} width={'100px'}></img>
+  {/* <img src={} alt="" height={'50px'} width={'100px'}></img> */}
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
