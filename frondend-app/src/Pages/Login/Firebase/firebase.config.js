@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCEGyiRBEHF3j2Ak51jj8oaA0zpqIoRYLA",
-    authDomain: "jarins-parlar-fullstack-app.firebaseapp.com",
-    projectId: "jarins-parlar-fullstack-app",
-    storageBucket: "jarins-parlar-fullstack-app.appspot.com",
-    messagingSenderId: "587705945221",
-    appId: "1:587705945221:web:1589c06648712c0db66dec"
+  apiKey: "AIzaSyDWR9YHoMWSThTU0nsPhKxfRLu8N1xS6Xg",
+  authDomain: "pharmacy-management-a0530.firebaseapp.com",
+  projectId: "pharmacy-management-a0530",
+  storageBucket: "pharmacy-management-a0530.appspot.com",
+  messagingSenderId: "135095762906",
+  appId: "1:135095762906:web:4f61a77ee36909b02dcae3"
   };
 
 export default firebaseConfig;
