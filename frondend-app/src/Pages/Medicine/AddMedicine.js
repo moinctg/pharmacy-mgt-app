@@ -26,9 +26,17 @@ const AddMedicine = () => {
           }
 
     return (
-        <div>
-             <h1 className='text-info my-4'>Add A Midicine  !</h1>
-                <form onSubmit={handleSubmit(onSubmit)} className='shadow p-4'>
+      <div className='main-container'>
+            
+             
+            <div className='container position-absolute top-50 start-50'>
+                <div className='row'>
+                    <div classsname="col-md-6">
+ 
+    
+     
+                  <h1 className='text-success my-4'>Add A New Paitent !</h1>
+                <form onSubmit={handleSubmit(onSubmit)} className='p-5'>
                   <Controller
         control={control}
         name="dateInput"
@@ -89,6 +97,9 @@ const AddMedicine = () => {
                     <input style={{ backgroundColor: 'gold', color: 'blue', borderRadius: '20px', marginTop: '20px', padding: '10px' }} type="submit" />
                 </form>
             
+        </div>
+        </div>
+        </div>
         </div>
     );
 };

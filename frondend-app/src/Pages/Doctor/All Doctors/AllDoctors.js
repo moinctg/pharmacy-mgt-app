@@ -12,8 +12,13 @@ const AllDoctors = () => {
     }
         ,[])
     return (
-        <div>
-
+        <div className='main-container'>
+            
+             
+            
+        <div className="card-box mb-30">
+        <h2 className="h4 pd-20"> ALL Doctors Information </h2>
+       
             {
 
                 doctor.map(doctors=><AllDoctor
@@ -22,8 +27,11 @@ const AllDoctors = () => {
                  doctors={doctors}
                 ></AllDoctor>)
             }
-            
+           
         </div>
+        </div>
+      
+        
     );
 };
 

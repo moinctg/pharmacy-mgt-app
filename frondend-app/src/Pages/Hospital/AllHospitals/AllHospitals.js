@@ -12,7 +12,13 @@ const AllHospitals = () => {
 
     },[])
     return (
-        <div>
+        <div className='main-container'>
+            
+             
+            
+        <div className="card-box mb-30">
+        <h2 className="h4 pd-20" text-center> ALL Doctors Information </h2>
+       
             {
                 
                 hospitals.map(hospital=> <AllHospital
@@ -26,6 +32,7 @@ const AllHospitals = () => {
                 
                 ></AllHospital>)
             }
+            </div>
             
         </div>
     );

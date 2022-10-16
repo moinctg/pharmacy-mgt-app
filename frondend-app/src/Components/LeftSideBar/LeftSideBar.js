@@ -7,8 +7,8 @@ const LeftSideBar = () => {
          <div className="left-side-bar">
 		<div className="brand-logo">
 			<a href="#">
-				<img src="vendors/images/Green.png" alt="" className="dark-logo"/>
-				<img src="vendors/images/deskapp-logo-white.svg" alt="" className="light-logo"/>
+				<img src="images/Green.png" alt="" className="dark-logo"/>
+				<img src="images/Green.png" alt="" className="light-logo"/>
 			</a>
 			<div className="close-sidebar" data-toggle="left-sidebar-close">
 				<i className="ion-close-round"></i>
@@ -35,6 +35,11 @@ const LeftSideBar = () => {
 						<li><NavLink  to="/adddoctor">Adding Doctor</NavLink></li>
 						<li><NavLink  to="/addhospital">Adding Hospital</NavLink></li>
 						<li><NavLink  to="/addpaitent">Adding Paitent</NavLink></li>
+						<li><NavLink  to="/addmedicine">Adding Medicinet</NavLink></li>
+						<li><NavLink  to="/addstock">Adding Stock</NavLink></li>
+						<li><NavLink  to="/addstore">Adding Store</NavLink></li>
+						<li><NavLink  to="/addstorekipper">Adding StoreKipper</NavLink></li>
+					
 										{/* <Routes>
 											<Route path="/" element={<Dashboard />}>
 												<Route
@@ -52,9 +57,13 @@ const LeftSideBar = () => {
 							<span className="micon dw dw-library"></span><span className="mtext">Report</span>
 						</a>
 						<ul className="submenu">
-							<li><NavLink  to="/alldoctor">Doctor List</NavLink></li>
-							<li><NavLink  to="/allhospital">Hospital  List</NavLink></li>
-							<li><NavLink  to="/allpaitent">Paitent   List</NavLink></li>
+							<li><NavLink  to="/alldoctor">Doctor Report</NavLink></li>
+							<li><NavLink  to="/allhospital">Hospital Report</NavLink></li>
+							<li><NavLink  to="/allpaitent">Paitent Report</NavLink></li>
+							<li><NavLink  to="/allmedicine">Medicine Report</NavLink></li>
+							<li><NavLink  to="/allstock"> Stock  Report</NavLink></li>
+							<li><NavLink  to="/allstore">Store Report</NavLink></li>
+							<li><NavLink  to="/allstorekipper"> Store Kipper Report</NavLink></li>
 							
 						</ul>
 					</li>

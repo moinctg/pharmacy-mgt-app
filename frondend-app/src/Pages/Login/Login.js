@@ -56,7 +56,7 @@ const Login = () => {
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li><Link to ="/register">Register</Link></li>
+					{/* <li><Link to ="/register">Register</Link></li> */}
 				</ul>
 			</div>
 		</div>
@@ -124,10 +124,10 @@ const Login = () => {
 									
 										{/* <a class="btn btn-primary btn-lg btn-block" href="index.html">Sign In</a> */}
 									</div>
-									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
+									{/* <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
 										<Link  class="btn btn-outline-primary btn-lg btn-block"  to ="/register">Register To Create Account</Link>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</form>
@@ -136,40 +136,7 @@ const Login = () => {
 			</div>
 		</div>
 	</div>
-        {/* <form className="form" onSubmit={handleLoginSubmit} >
-            <div className='main-form p-3'>
-                <h2>Login With </h2>
-                
-                <div className='form-group'>
-                    <label htmlFor="email">Email:</label>
-                    <input 
-                    type="email"
-                     name="email"
-                     className="form-control input"
-                     
-                      id="inputEmail3"
-                       onBlur={handleOnBlur}  label="email" 
-                       required/>
-                </div>
-                <div className='form-group'>
-                    <label htmlFor="password">Password:</label>
-                    <input
-                     className="form-control input"
-                     type="password" 
-                     name='password' 
-                     id="inputPassword3"
-                     onBlur={handleOnBlur } label='password'
-                     required />
-                </div>
-               
-                <input className="input" type="submit" value='LOGIN' /> <br/> */}
-                  <p className="text-center">--------Or--------</p>
-                <button className="" onClick={handleGoogleSignIn}><img style={{width:'30px', marginLeft:'30px'}} src={google} alt="" /></button>
-                
-                    <NavLink as={Link} to='/register' >Don't have account? create an account</NavLink>
-                   
-                
-            </div>
+       </div>
       
        
     );
