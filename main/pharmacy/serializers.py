@@ -24,9 +24,9 @@ class StockSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock
         fields = "__all__"
-class DispanarySerializer(serializers.ModelSerializer):
+class DispenseSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Dispanary
+        model = Dispense
         fields = "__all__"
 class StoreKipperSerializer(serializers.ModelSerializer):
     class Meta:
