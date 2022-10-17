@@ -16,13 +16,17 @@ class PatientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Patient
         fields = "__all__"
-class MedicineSerializer(serializers.ModelSerializer):
+class CategoreSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Medicine
+        model = Category
         fields = "__all__"
 class StockSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock
+        fields = "__all__"
+class DispanarySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Dispanary
         fields = "__all__"
 class StoreKipperSerializer(serializers.ModelSerializer):
     class Meta:

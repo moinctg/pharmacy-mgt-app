@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     
     'pharmacy',
-    # 'simplejwt'
+    'simplejwt',
     'accounts',
 ]
 SITE_ID=1 
@@ -183,6 +183,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/','static')]
+STATIC_ROOT = os.path.join(BASE_DIR,'build/', 'staticroot/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

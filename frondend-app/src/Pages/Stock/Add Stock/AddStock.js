@@ -39,6 +39,12 @@ const AddStock = () => {
      
                   <h1 className='text-success my-4'>Add A New Stock !</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className='p-5'>
+                <input  type="number" {...register("price", { required: true, maxLength: 30 })} placeholder="price" className='input-apply' />
+                    <br /><br />
+                    <input type="number" {...register("quntity", { required: true, maxLength: 200 })} placeholder="quntity" className='input-apply' />
+                    <br /><br />
+                    <input type="number" {...register("waranty", { required: true, maxLength: 200 })} placeholder="quntity" className='input-apply' />
+                    <br /><br />
                   <Controller
         control={control}
         name="dateInput"
