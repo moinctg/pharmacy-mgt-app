@@ -92,7 +92,6 @@ class Stock(models.Model):
     receive_quantity = models.IntegerField(default='0', blank=True, null=True)
     manufacture = models.CharField(max_length=50, blank=True, null=True)
     last_updated = models.DateTimeField(auto_now_add=False, auto_now=True)
-    drug_strength = models.CharField(max_length=10, blank=True, null=True)
     valid_from = models.DateTimeField(blank=True,
                                       null=True,
                                       default=timezone.now)
@@ -105,15 +104,7 @@ class Stock(models.Model):
         return str(self.drug_name)
 
 
-class StoreKipper(models.Model):
-    name = models.CharField(max_length=20)
-    address = models.CharField(max_length=200)
-    contact = models.BigIntegerField()
-    nid = models.CharField(max_length=50)
-    Salary = models.BigIntegerField()
-    user_id=models.ForeignKey(User, on_delete=models.CASCADE)
 
-    join_date = models.DateTimeField(auto_now_add='')
 
 
 class Store(models.Model):
@@ -122,12 +113,21 @@ class Store(models.Model):
     contact = models.BigIntegerField()
     location = models.CharField(max_length=50)
     store_kiper = models.ForeignKey('StoreKipper', on_delete=models.CASCADE)
-    despense_id = models.ForeignKey('Dispense', on_delete=models.CASCADE)
+    # despense_id = models.ForeignKey('Dispense', on_delete=models.CASCADE)
 
+class StoreKipper(models.Model):
+    name = models.CharField(max_length=20)
+    address = models.CharField(max_length=200)
+    contact = models.BigIntegerField()
+    nid = models.CharField(max_length=50)
+    Salary = models.BigIntegerField()
+    # user_id=models.ForeignKey(User, on_delete=models.CASCADE)
+
+    join_date = models.DateTimeField(auto_now_add='')
 
 class Dispense(models.Model):
 
-    store_id = models.ForeignKey(Store, on_delete=models.DO_NOTHING, null=True)
+
     drug_id = models.ForeignKey(Stock,
                                 on_delete=models.SET_NULL,
                                 null=True,
@@ -141,9 +141,12 @@ class Dispense(models.Model):
     dispense_at = models.DateTimeField(auto_now_add=True,
                                        null=True,
                                        blank=True)
-    storekipper = models.ForeignKey(StoreKipper,
-                                    on_delete=models.DO_NOTHING,
-                                    null=True)
+
+  
+
+    
+
+
 
 
 disc_choice = (
