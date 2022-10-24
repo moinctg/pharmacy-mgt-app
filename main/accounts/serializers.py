@@ -1,28 +1,29 @@
-from dataclasses import field, fields
-from pyexpat import model
-from urllib import request
-from rest_framework import serializers
 
-from main import settings
+from rest_framework import serializers
 from .models import CustomUser,Roles,UserActivities
 
 
 class CreateUserSerializers(serializers.Serializer):
     email = serializers.EmailField()
     fullname = serializers.CharField()
-    role= serializers.ChoiceField(Roles)
+    role = serializers.ChoiceField(Roles)
 
 class LoginSerializer (serializers.Serializer):
     email = serializers.EmailField()
-    password = serializers.CharField(request=False)
+    password = serializers.CharField(required=False)
     is_new_user = serializers.BooleanField(default=False,required=False)
 
-class UpdatePassowrdSerializer(serializers.ModelSerializer):
+
+class UpdatePasswordSerializer(serializers.Serializer):
+    user_id = serializers.CharField()
+    password = serializers.CharField()
+
+
+class CustomUserSerializer(serializers.ModelSerializer):
+    
     class Meta:
-        model= CustomUser
-        exclude = ("password",)
-
-
+        model = CustomUser
+        exclude = ("password", )
 
 
 

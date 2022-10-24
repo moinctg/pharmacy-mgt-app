@@ -1,7 +1,7 @@
 import jwt
 from datetime import datetime, timedelta
 from django.conf import settings
-from user_control.models import CustomUser
+from accounts.models import CustomUser
 from rest_framework.pagination import PageNumberPagination
 import re
 from django.db.models import Q

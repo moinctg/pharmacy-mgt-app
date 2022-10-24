@@ -152,8 +152,11 @@ REST_FRAMEWORK = {
     
 # }
 
-REST_AUTH_SERIALIZERS = {
-    'USER_DETAILS_SERIALIZER': 'accounts.serializers.UserDetailsSerializer'
+# REST_AUTH_SERIALIZERS = {
+#     'USER_DETAILS_SERIALIZER': 'accounts.serializers.UserDetailsSerializer'
+# }
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'main.custom_methods.custom_exception_handler',
 }
 
 # CACHES = {
@@ -195,7 +198,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'accounts.User'
+AUTH_USER_MODEL = "accounts.CustomUser"
 ACCOUNT_EMAIL_REQUIRED=False
 
 # # Email Configuration
@@ -229,6 +232,7 @@ ACCOUNT_EMAIL_REQUIRED=False
 # PASSWORD_RESET_TIMEOUT=900          # 900 Sec = 15 Min
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+ROOT_URLCONF = 'main.urls'
 
 CSRF_COOKIE_NAME = "csrftoken"
 
